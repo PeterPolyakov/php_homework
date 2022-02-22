@@ -1,0 +1,212 @@
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.wrapper {
+  height: 100vh;
+  background: url("../assets/lissete.jpg") no-repeat 100% 100%;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+.contain {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.header-logo {
+  width: 250px;
+}
+.header-nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px 0;
+}
+.nav-menu {
+  display: flex;
+  margin-top: 15px;
+}
+.nav-menu-item a {
+  padding: 15px 30px;
+  font-size: 22px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+}
+.nav-menu-item a:hover {
+  color: #fbb035;
+  border-bottom: 2px solid #fbb035;
+}
+.active {
+  color: #fbb035;
+  border-bottom: 2px solid #fbb035;
+}
+.auth button {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  background: none;
+}
+.auth button:hover {
+  border: 2px solid #fbb035;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: #fbb035;
+}
+
+.auth-search {
+  display: flex;
+  align-items: center;
+}
+div.search-modal {
+  background-color: rgb(251, 176, 53, 0.8);
+}
+.butto {
+  text-align: center;
+}
+.search-button {
+  font-size: 26px;
+  border: 2px solid #fff;
+  padding: 10px 30px;
+  border-radius: 5px;
+  background: none;
+  color: #fff;
+  transition: 0.5s;
+}
+.search-button:hover {
+  transform: scale(1.5);
+}
+
+.search-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
+  margin: 20px 0;
+}
+.search-block {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+input {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+.search {
+  width: 60%;
+}
+.search:focus {
+  box-shadow: 0px 0px 10px 5px rgb(78, 78, 77, 0.5);
+}
+.date {
+  width: 25%;
+}
+.date:focus {
+  box-shadow: 0px 0px 10px 5px rgb(78, 78, 77, 0.5);
+}
+.submit {
+  width: 10%;
+  font-size: 18px;
+  color: #fff;
+  background-color: rgb(78, 78, 77, 0.5);
+}
+.submit:hover {
+  box-shadow: 0px 0px 10px 5px rgb(78, 78, 77, 0.5);
+}
+
+.title {
+  color: #fff;
+  font-size: 48px;
+  text-align: center;
+  margin-top: 130px;
+}
+.subtitle {
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  margin: 50px 0;
+  text-align: center;
+  white-space: nowrap;
+}
+.subtitle:before,
+.subtitle:after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: -1px;
+  width: 10%;
+  height: 1px;
+  vertical-align: middle;
+  background: #fff;
+}
+.subtitle:before {
+  left: -10px;
+  margin-left: -50%;
+}
+.subtitle:after {
+  left: 10px;
+  margin-right: -50%;
+}
+
+.slider {
+  height: 70vh;
+  margin-bottom: 30px;
+  border: 10px solid rgb(251, 176, 53, 0.8);
+  border-radius: 5px;
+}
+.slid-title {
+  font-size: 34px;
+  padding: 20px 0;
+}
+.slid-img {
+  height: 68vh;
+}
+
+.cards-popular {
+  margin: 20px 0 30px 0;
+}
+.cards {
+  border: 3px solid rgb(251, 176, 53);
+  box-shadow: 0px 0px 10px 5px rgb(78, 78, 77, 0.5);
+  border-radius: 7px;
+}
+
+.reviews {
+  margin-bottom: 60px;
+}
+.review {
+  position: relative;
+  width: 30%;
+  border: 3px solid rgb(251, 176, 53);
+  border-radius: 7px;
+  box-shadow: 0px 0px 10px 5px rgb(78, 78, 77, 0.5);
+  padding: 20px;
+}
+.review-img {
+  position: absolute;
+  right: 20px;
+  top: 130px;
+}
+
+.partners {
+  width: 100%;
+  height: 200px;
+  border: 3px solid rgb(251, 176, 53);
+  margin-bottom: 30px;
+}
+
+.footer {
+  height: auto;
+  background: url("../assets/lissete.jpg") no-repeat 100% 100%;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+.footer-logo {
+  padding: 150px 0;
+}
