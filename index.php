@@ -1,5 +1,13 @@
 <?php
 $isAuth = true;
+$time = date("H:m");
+$title = "Hotels24";
+
+$int = 33;
+$float = 33.33;
+$n = NULL;
+$array = [1, 2, 3, 4, 5];
+define('yearOfBirth', 1993);
 ?>
 
 <!doctype html>
@@ -11,7 +19,7 @@ $isAuth = true;
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>Hotels24</title>
+    <title><?php echo $title ?></title>
 </head>
 
 <body>
@@ -34,7 +42,13 @@ $isAuth = true;
                         <?php if ($isAuth) : ?>
                             <div class="dropdown">
                                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                    p@gmail.com
+                                    <?php if ($time > "05:00" && $time < "09:00") : ?>
+                                        Доброе утро
+                                    <?php elseif ($time > "09:00" && $time < "17:00") : ?>
+                                        Привет
+                                    <?php else : ?>
+                                        Добрый вечер
+                                    <?php endif; ?>
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                                     <li><a class="dropdown-item" href="#">Кабинет</a></li>
